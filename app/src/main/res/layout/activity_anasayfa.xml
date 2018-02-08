@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context="com.mobilhanem.timepickerkullanimi.Anasayfa" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp">
+
+            <TableRow
+                android:id="@+id/start_table"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/startDate_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="startDate :"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/startDate"
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:paddingLeft="10dp"
+                    android:text="Tarih"
+                    android:textAppearance="@android:style/TextAppearance"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/startDate_button"
+                    android:layout_width="105dp"
+                    android:layout_height="40dp"
+                    android:text="Start"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/endDate_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="endDate :"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/endDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/button1"
+                    android:paddingLeft="10dp"
+                    android:text="Tarih 2"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/endDate_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="End"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/minCount_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="minCount :"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/minCount"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="2700"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/maxCount_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="maxCount :"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/maxCount"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:text="3000"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="300dp"
+                android:layout_height="100dp">
+
+                <Button
+                    android:id="@+id/Send"
+                    android:layout_width="61dp"
+                    android:layout_height="40dp"
+                    android:text="Send"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="300dp"
+                android:layout_height="140dp">
+
+                <Button
+                    android:id="@+id/other_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get List"
+                    android:textSize="16sp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/response"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="15sp"
+            android:scrollbars="horizontal"
+            android:maxLines = "400"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_lock_lock" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
